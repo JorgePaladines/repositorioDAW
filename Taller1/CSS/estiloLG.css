@@ -1,0 +1,18 @@
+div{
+	display: block;
+	font-family: 'Baloo';
+	font-size: 36px;
+	width: 120px;
+	height: 120px;
+	border: solid 2px #606060;
+	text-align: center;
+	line-height: 120px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+}
+div:nth-child(odd){
+	background-color: #dfedd6;
+}
+div:nth-child(even){
+	background-color: #f7fade;
+}
