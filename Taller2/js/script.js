@@ -32,7 +32,8 @@ function loadTweets(){
     dataType: "xml",
     success: function(xml){
       $(xml).find('item').each(function(){
-        var autor = $(this).find('dc:creator').text();
+        var autor = $(this).find('dc\\:creator').text();
+        autor = autor.slice(2,autor.length-1);
         var descripcion = $(this).find('description').text();
         var pubDate = $(this).find('pubDate').text();
 
